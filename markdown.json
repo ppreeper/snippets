@@ -1,0 +1,7 @@
+{
+  "hshort": {
+    "prefix": ["hshort"],
+    "body": ["{{< $1 \"$2\" >}}"],
+    "description": "shortcode"
+  }
+}

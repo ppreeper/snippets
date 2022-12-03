@@ -1,0 +1,102 @@
+{
+  "hx": {
+    "prefix": ["hx"],
+    "body": ["{{ $0 }}"],
+    "description": "Curlies"
+  },
+  "hxx": {
+    "prefix": ["hxx"],
+    "body": ["{{ .$0 }}"],
+    "description": "Dot"
+  },
+  "hif": {
+    "prefix": ["hif"],
+    "body": ["{{ if }}", "$0", "{{ end }}"],
+    "description": "If"
+  },
+  "hife": {
+    "prefix": ["hife"],
+    "body": ["{{}}"],
+    "description": "If/Else"
+  },
+  "hwith": {
+    "prefix": ["hwith"],
+    "body": ["{{ with }}", "$1", "{{ end }}"],
+    "description": "With"
+  },
+  "hwithe": {
+    "prefix": ["hwithe"],
+    "body": ["{{ with }}", "$1", "{{ else }}", "$2", "{{ end }}"],
+    "description": "With/Else"
+  },
+  "hrange": {
+    "prefix": ["hrange"],
+    "body": ["{{ range $1 }}", "$0", "{{ end }}"],
+    "description": "Range"
+  },
+  "hpartial": {
+    "prefix": ["hpartial"],
+    "body": ["{{ partial \"$0\" . }}"],
+    "description": "Partial"
+  },
+  "hpartialc": {
+    "prefix": ["hpartialc"],
+    "body": ["{{ partialCached \"$0\" . variant }}"],
+    "description": "partialCached"
+  },
+  "hxpartial": {
+    "prefix": ["hxpartial"],
+    "body": ["partial \"$0\" ."],
+    "description": "Naked partial"
+  },
+  "hblock": {
+    "prefix": ["hblock"],
+    "body": ["{{ block \"main\" . }}", "$0", "{{ end }}"],
+    "description": "Block"
+  },
+  "hdefine": {
+    "prefix": ["hdefine"],
+    "body": ["{{ define \"block\" }}", "$0", "{{ end }}"],
+    "description": "Block define"
+  },
+  "hscra": {
+    "prefix": ["hscra"],
+    "body": ["`{{ .Scratch.Set"],
+    "description": "Scratch"
+  },
+  "hstr": {
+    "prefix": ["hstr"],
+    "body": ["{{ printf \"Something about %s\" . }}"],
+    "description": "String"
+  },
+  "hprint": {
+    "prefix": ["hprint"],
+    "body": ["`printf \"%s\""],
+    "description": "printF"
+  },
+  "hvars": {
+    "prefix": ["hvars"],
+    "body": ["{{ $var := what }}"],
+    "description": "Variable"
+  },
+  "hret": {
+    "prefix": ["hret"],
+    "body": ["{{ return $return }}"],
+    "description": "Return"
+  },
+  "hdebug": {
+    "prefix": ["hdebug"],
+    "body": ["{{ printf \"%#v\" . }}"],
+    "description": "Debug"
+  },
+  "herror": {
+    "prefix": ["herror"],
+    "body": ["{{ errorf \"%#v\" . }}"],
+    "description": "Error"
+  },
+  "hcomm": {
+    "prefix": ["hcomm"],
+    "body": ["{{/* */}}"],
+    "description": "Comment"
+  }
+}

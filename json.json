@@ -1,0 +1,11 @@
+{
+  "vsnip": {
+    "prefix": ["vsnip"],
+    "body": [
+      "\"$1\":{ \"prefix\":[\"$1\"], \"body\": [",
+      "\"$0\"",
+      "],\"description\":\"\"},"
+    ],
+    "description": "vsnip"
+  }
+}
