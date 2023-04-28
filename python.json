@@ -1,21 +1,21 @@
 {
   "odoo": { "prefix": ["odoo"], "body": [""], "description": "" },
-  "sb": {
+  "python env": {
     "prefix": ["sb"],
     "body": ["#!/usr/bin/env python"],
     "description": ""
   },
-  "sb3": {
+  "python3 env": {
     "prefix": ["sb3"],
     "body": ["#!/usr/bin/env python3"],
     "description": ""
   },
-  "ucode": {
+  "unicode": {
     "prefix": ["ucode"],
     "body": ["# -*- coding: utf-8 -*-"],
     "description": ""
   },
-  "oomanifest": {
+  "odoo manifest": {
     "prefix": ["oomanifest"],
     "body": [
       "{",
@@ -47,19 +47,19 @@
     "description": "add manifest"
   },
 
-  "oofimport": {
+  "from import": {
     "prefix": ["oofimport"],
     "body": ["from . import ${1:names}"],
     "description": "add from import"
   },
 
-  "ooimport": {
+  "odoo import": {
     "prefix": ["ooimport"],
-    "body": ["from odoo import _, api, fields, models,tools"],
-    "description": "add an import"
+    "body": ["from odoo import _, api, fields, models, tools"],
+    "description": "add default oddoo imports"
   },
 
-  "oofile": {
+  "from models": {
     "prefix": ["oofile"],
     "body": ["from . import models"],
     "description": ""
