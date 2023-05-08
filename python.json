@@ -20,7 +20,7 @@
     "body": [
       "{",
       "'name': '$1',",
-      "'version': '1.0.1.0',",
+      "'version': '1.0',",
       "'description': '$2',",
       "'summary': '$2',",
       "'author': '$3',",
